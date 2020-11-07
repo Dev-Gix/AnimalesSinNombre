@@ -17,7 +17,7 @@ img {
     max-width: 100%;
 }
 
-h1{
+h1 {
     font-size: 5rem;
 }
 
@@ -39,6 +39,9 @@ p {
     line-height: 2;
 }
 
+th, td {
+    width: 50%;
+}
 
 /**Globales*/
 
@@ -144,10 +147,8 @@ p {
 
 /**Informacion**/
 
-.contenido-informacion{
-  
-    margin: 4rem 0 4rem ;
-  
+.contenido-informacion {
+    margin: 4rem 0 4rem;
 }
 
 .imagen-informacion img {
@@ -193,15 +194,16 @@ p {
 
 .fotos-muestras {
     background-color: #1CAD53;
-  
 }
-.lista-mascotas-recuperadas li{
+
+.lista-mascotas-recuperadas li {
     margin: 1rem;
 }
-.lista-mascotas-recuperadas{
-     display: inline-grid;
-     grid-template-columns: repeat(3, 1fr);
-      list-style: none;
+
+.lista-mascotas-recuperadas {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
 }
 
 .lista-mascotas-recuperadas img {
@@ -340,15 +342,16 @@ input[type="radio"] {
 }
 
 /**NOSOTROS**/
-.nosotros{
+
+.nosotros {
     background-image: url(../img/fondo-frase.jpg);
     padding-bottom: 2rem;
 }
 
-.quienes-somos h1{
-  
-    margin:0;
-    padding:0;
+.quienes-somos h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .quienes-somos {
@@ -360,47 +363,133 @@ input[type="radio"] {
     margin-bottom: 2rem;
 }
 
+.quienes-somos p, span {
+    font-size: 1.5rem;
+}
+
+.quienes-somos span {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .quienes-somos span {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .quienes-somos p {
+        font-size: 2rem;
+    }
+    .quienes-somos span {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}
+
 .fortaleza {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: white;
     -webkit-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
     border-radius: 30px;
     margin-bottom: 2rem;
-    
-     
 }
 
-.fortaleza .imagen-nosotros img{
-    border-radius: 0px 16px 16px 0px;
+.fortaleza h2 {
+    font-size: 2rem;
 }
 
+.fortaleza p {
+    font-size: 1.5rem;
+    justify-content: center;
+}
 
-.quienes-somos p,.informacion-nosotros p,li{
+.fortaleza .imagen-nosotros img {
+    border-radius: 0px 0px 30px 30px;
+}
+
+.quienes-somos p, .informacion-nosotros p, li {
     margin: 0 4rem;
-    
 }
 
-.quienes-somos span{
-    font-weight:bold;
-    font-size:2rem;
-    
+@media (min-width: 768px) {
+    .fortaleza {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fortaleza .imagen-nosotros img {
+        border-radius: 0px 30px 30px 0px;
+    }
+    .fortaleza p {
+        font-size: 2rem;
+        justify-content: center;
+    }
 }
 
-.quienes-somos h1{
-    font-size:5rem;
+.informacion-nosotros p, li {
+    text-align: left;
 }
 
-.informacion-nosotros p,li{
-    text-align:left;
+.informacion-nosotros li {
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
-.informacion-nosotros li{
-   font-size: 2rem;
-   line-height:1.5;
+/**ADOPTA**/
+
+@media (min-width: 768px) {
+    .tabla-Adopta {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+.tabla-Adopta tr {
+    display: inline-block;
+    background-color: white;
+    -webkit-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .tabla-Adopta tr {
+        display: inline-block;
+        background-color: white;
+        -webkit-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 30px;
+        margin-top: 2rem;
+        padding-bottom: 0rem;
+    }
+}
+
+.tabla-Adopta img {
+    border-radius: 30px;
+}
+
+.iformacion-adopta-tabla p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.boton-contacto-adopta {
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.boton-contacto-adopta a:hover {
+    color: green;
+    transition: .5s ease-in-out;
 }
 
 
-
+@media (min-width: 768px) {
+    .iformacion-adopta-tabla p {
+        font-size: 2rem;
+    }
+}
