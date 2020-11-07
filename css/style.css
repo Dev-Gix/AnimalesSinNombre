@@ -350,7 +350,7 @@ input[type="radio"] {
 }
 
 .quienes-somos h1{
-  
+    font-size:2.5rem;
     margin:0;
     padding:0;
 }
@@ -364,9 +364,41 @@ input[type="radio"] {
     margin-bottom: 2rem;
 }
 
+
+.quienes-somos p,span{
+    font-size:1.5rem;
+}
+
+.quienes-somos span{
+    font-weight:bold;
+    
+}
+
+
+@media (min-width: 768px) {
+ 
+    .quienes-somos span{
+
+        font-weight:bold;
+        font-size:2rem;   
+    }
+
+    .quienes-somos p{
+        font-size:2rem;
+    }
+    
+    .quienes-somos span{
+    
+        font-weight:bold;
+        font-size:2.5rem;  
+    }
+    
+    
+}
+
+
+
 .fortaleza {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: white;
     -webkit-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
@@ -376,9 +408,16 @@ input[type="radio"] {
     
      
 }
+.fortaleza h2{
+    font-size:2rem;
+}
+.fortaleza p{
+    font-size:1.5rem;
+    justify-content:center;
+}
 
 .fortaleza .imagen-nosotros img{
-    border-radius: 0px 16px 16px 0px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 
@@ -387,15 +426,22 @@ input[type="radio"] {
     
 }
 
-.quienes-somos span{
-    font-weight:bold;
-    font-size:2rem;
-    
+@media (min-width: 768px) {
+    .fortaleza{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .fortaleza .imagen-nosotros img{
+        border-radius: 0px 30px 30px 0px;
+    }
+    .fortaleza p{
+        font-size:2rem;
+        justify-content:center;
+    }
 }
 
-.quienes-somos h1{
-    font-size:5rem;
-}
+
 
 .informacion-nosotros p,li{
     text-align:left;
