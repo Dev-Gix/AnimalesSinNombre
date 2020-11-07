@@ -39,6 +39,10 @@ p {
     line-height: 2;
 }
 
+th, td {
+    width: 50%;
+    
+}
 
 /**Globales*/
 
@@ -404,9 +408,36 @@ input[type="radio"] {
 
 
 /**ADOPTA**/
-.adoptafila p{
-        margin: 0;
+
+.tabla-Adopta{
+    table-layout: fixed;
+    width: 100%;
 }
+
+.tabla-Adopta tr{
+    display:inline-block;
+    background-color: white;
+    -webkit-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -14px -1px 11px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+
+.tabla-Adopta img{
+    border-radius: 30px;
+}
+
+.iformacion-adopta-tabla p{
+  text-transform: uppercase;
+}
+
+.boton-contacto-adopta{
+    text-align:right;
+    margin-right: 2rem;
+}
+
+
 
 
 
